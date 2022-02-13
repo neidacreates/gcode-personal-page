@@ -1,2 +1,2 @@
-# gcode-personal-page
-Personal webpage project
+# Personal Page
+Personal webpage project made during G{Code} Program.
