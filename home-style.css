@@ -1,0 +1,115 @@
+
+
+body {
+    background-color: #036332;
+    color: white;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+#menu-bar {
+    background: white;
+    color:#036332; 
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.menu-links {
+    color:#036332;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#page-title {
+    font-family: 'Meow Script', cursive;
+    font-size: 60px;
+
+}
+
+/* flexbox attempt */
+
+#main-pic-and-paragraph {
+    display: flex;
+    justify-content: space-around;
+} 
+
+
+
+#homepage-pic {
+    width:45%;
+    border: white dotted 2px;
+    padding: 5px;
+    margin-top: 20px;
+    /* float: left; */
+    /* margin-left: 20px; */
+}
+
+.caption {
+    font-size: 12px;
+}
+
+#main-paragraph {
+    color: #036332;
+    background-color: darkseagreen;
+    padding: 100px 30px 30px 30px;
+    
+    width: 40%;
+
+    /* 
+    experiments 
+
+    float: right; 
+     margin-top: 100px; 
+     margin-right: 40px;
+     height: 200px; 
+     margin: 40px 0px 40px 0px; 
+     */
+}
+
+#plant-list-heading {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: white;
+
+}
+
+#list-pics-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list-pics {
+    border-radius: 50%;
+    width: 18%;
+    /* margin-left: auto;
+    margin-right: auto; */
+    margin-bottom: 20px;
+    border: solid white 2px;
+    padding: 5px;
+}
+
+#plant-list {
+    font-size: 16px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#outside-web-link {
+    color: white;
+}
+
+/* CSS for the about page*/
+
+#about-picture {
+    width: 50%;
+}
+
+#about-paragraph {
+    margin-left: 100px;
+    margin-right: 100px;
+}
