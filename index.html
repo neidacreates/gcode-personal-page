@@ -8,24 +8,24 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Meow+Script&display=swap" rel="stylesheet"> 
         <!--css link-->
-        <link rel="stylesheet" type="text/css" href="home-style.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
 
-    <body>
+    <body id="main-background">
         <h1 id="page-title">Nature at Home</h1>
 
         <nav >
             <ul id="menu-bar">
                 
-                <li ><a class="menu-links" href="#pageTitle">Home</a></li>
+                <li ><a class="menu-links dark" href="#pageTitle">Home</a></li>
                 
                 <span>|</span>
                 
-                <li><a  class="menu-links"href="about.html">About</a></li> 
+                <li><a  class="menu-links dark"href="about.html">About</a></li> 
                 
                 <span>|</span>
 
-                <li><a  class="menu-links"href="#plant-list-heading">Plant List</a></li>
+                <li><a  class="menu-links dark"href="plant-list-heading">Plant List</a></li>
 
             </ul>
         </nav>
@@ -36,7 +36,7 @@
 
             <!-- <p class="caption">You can grow a collection like this too!</p> -->
             
-            <p id="main-paragraph"> Plants are really pretty to have in your home, but they are also good to keep you healthy. Some plants even clean the air you breathe! Having a little bit of nature in your house helps to make your space more alive and that helps you feel happier. That's why it's great to have plants, but it can be hard to take care of them so that they don't die. Make sure to find out what your plants like (Lots of sun or no sun? Lots of water or no water?) and treat them well so they will love you back.</p>
+            <p id="main-paragraph"> Welcome! If you want to learn more about how to raise your own houseplant friends, you've come to the right place! <br> Plants are not only a pretty addition to your home, but also a healthy addition too. Plants are really pretty to have in your home, but they are also good to keep you healthy. Some plants even clean the air you breathe! Having a little bit of nature in your house helps to make your space more alive and that helps you feel happier. That's why it's great to have plants, but it can be hard to take care of them so that they don't die. Make sure to find out what your plants like (Lots of sun or no sun? Lots of water or no water?) and treat them well so they will love you back.</p>
             
         </section>
 
@@ -58,8 +58,12 @@
             <li>Peace Lily</li>
             <li>Snake Plant</li>
             <li>Pothos</li>
-            <li><a id="outside-web-link"href="https://www.hgtv.com/outdoors/flowers-and-plants/houseplants/14-indoor-plants-for-low-light-pictures" target="_blank">And Many More!</a></li>
+            <li><a class="outside-web-links"href="https://www.hgtv.com/outdoors/flowers-and-plants/houseplants/14-indoor-plants-for-low-light-pictures" target="_blank">And Many More!</a></li>
         </ul>
+
+        <button id="dark-mode-btn" onclick="toggleDarkMode()">Switch to Light Mode</button>
+        
+        <script src="main.js"></script>
     </body>
 
 </html>
