@@ -1,7 +1,7 @@
 
 
 body {
-    background-color: #036332;
+    background-color: rgb(42, 97, 55);
     color: white;
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -13,16 +13,10 @@ li {
 
 #menu-bar {
     background: white;
-    color:#036332; 
+    color:rgb(42, 97, 55); 
     display: flex;
     justify-content: space-around;
     
-}
-
-.menu-links {
-    color:#036332;
-    font-size: 20px;
-    text-decoration: none;
 }
 
 #page-title {
@@ -38,8 +32,6 @@ li {
     justify-content: space-around;
 } 
 
-
-
 #homepage-pic {
     width:45%;
     border: white dotted 2px;
@@ -54,10 +46,9 @@ li {
 }
 
 #main-paragraph {
-    color: #036332;
+    color: rgb(42, 97, 55);
     background-color: darkseagreen;
-    padding: 100px 30px 30px 30px;
-    
+    padding: 30px;
     width: 40%;
 
     /* 
@@ -72,7 +63,7 @@ li {
 }
 
 #plant-list-heading {
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 30px;
     color: white;
 
@@ -99,17 +90,48 @@ li {
     justify-content: space-evenly;
 }
 
-#outside-web-link {
+.outside-web-links {
     color: white;
+}
+
+.menu-links.dark {
+    color:rgb(42, 97, 55);
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu-links.light {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* button */
+
+#dark-mode-btn {
+    background-color: white;
+    color:rgb(42, 97, 55);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 30px;
+}
+
+#dark-mode-btn:hover {
+    background-color:beige;
 }
 
 /* CSS for the about page*/
 
 #about-picture {
     width: 50%;
+    border: white dotted 2px;
+    padding: 5px;
 }
 
 #about-paragraph {
     margin-left: 100px;
     margin-right: 100px;
 }
+
+
+
