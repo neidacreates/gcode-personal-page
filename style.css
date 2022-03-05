@@ -1,7 +1,15 @@
 
+* {
+    box-sizing: border-box;
+  }
+/*
+  ========================================
+  Base style
+  ========================================
+*/
 
 body {
-    background-color: rgb(42, 97, 55);
+    background-color: rgb(30,53,10);
     color: white;
     text-align: center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -11,127 +19,223 @@ li {
     list-style-type: none;
 }
 
+#page-title {
+    font-family: 'Meow Script', cursive, sans-serif;
+    font-size: 60px;
+    clear: both;
+}
+
+a.dark {
+    color: white;
+    text-decoration: none;
+}
+
+a.light {
+    color: rgb(30,53,10);
+    text-decoration: none;
+}
+
+em {
+    font-weight: bold;
+    color:rgb(179,212,129);
+}
+
+
+/*
+  ========================================
+  Menu bar and links
+  ========================================
+*/
+
 #menu-bar {
     background: white;
-    color:rgb(42, 97, 55); 
+    color:rgb(30,53,10); 
     display: flex;
     justify-content: space-around;
     
 }
 
-#page-title {
-    font-family: 'Meow Script', cursive;
-    font-size: 60px;
-
-}
-
-/* flexbox attempt */
-
-#main-pic-and-paragraph {
-    display: flex;
-    justify-content: space-around;
-} 
-
-#homepage-pic {
-    width:45%;
-    border: white dotted 2px;
-    padding: 5px;
-    margin-top: 20px;
-    /* float: left; */
-    /* margin-left: 20px; */
-}
-
-.caption {
-    font-size: 12px;
-}
-
-#main-paragraph {
-    color: rgb(42, 97, 55);
-    background-color: darkseagreen;
-    padding: 30px;
-    width: 40%;
-
-    /* 
-    experiments 
-
-    float: right; 
-     margin-top: 100px; 
-     margin-right: 40px;
-     height: 200px; 
-     margin: 40px 0px 40px 0px; 
-     */
-}
-
-#plant-list-heading {
-    margin-top: 100px;
-    margin-bottom: 30px;
-    color: white;
-
-}
-
-#list-pics-container {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.list-pics {
-    border-radius: 50%;
-    width: 18%;
-    /* margin-left: auto;
-    margin-right: auto; */
-    margin-bottom: 20px;
-    border: solid white 2px;
-    padding: 5px;
-}
-
-#plant-list {
-    font-size: 16px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.outside-web-links {
-    color: white;
-}
-
 .menu-links.dark {
-    color:rgb(42, 97, 55);
+    color:rgb(30,53,10);
     font-size: 20px;
     text-decoration: none;
 }
 
 .menu-links.light {
     color: white;
-    text-decoration: none;
     font-size: 20px;
+    text-decoration: none;
 }
 
-/* button */
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fcfafa;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* z-index: 1; */
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: rgb(30,53,10);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: rgb(179,212,129);}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/*
+  ========================================
+  dark/light mode button
+  ========================================
+*/
 
 #dark-mode-btn {
     background-color: white;
-    color:rgb(42, 97, 55);
+    color: rgb(30,53,10);
     border-radius: 5px;
+    padding: 5px;
+    float: right;
+    border: solid white 2px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+/* #dark-mode-btn:hover {
+    background-color: darkseagreen;
+    color:rgb(42, 97, 55);
+} */
+
+/*
+  ========================================
+  Index style
+  ========================================
+*/
+
+#main-pic-and-paragraph {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+} 
+
+#homepage-pic {
+    width:45%;
+    border: white solid 2px;
+    padding: 5px;
+}
+
+#main-paragraph {
+    color: white;
+    background-color: rgb(49,84,21);
+    padding: 30px;
+    width: 40%;
+    border: solid white 2px;
+}
+
+#plant-list-heading {
+    margin-top: 100px;
+    margin-bottom: 30px;
+    /* color: white; */
+}
+
+#list-pics-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.list-pics {
+    border-radius: 50%;
+    width: 90%;
+    margin-bottom: 20px; 
+    border: solid white 2px;
+    padding: 5px;
+}
+
+/*
+  ========================================
+  About page style
+  ========================================
+*/
+
+#about-picture {
+    width: 40%;
+    border: white solid 2px;
     padding: 5px;
     margin-top: 30px;
 }
 
-#dark-mode-btn:hover {
-    background-color:beige;
+#about-paragraph, #about-footer {
+    margin: 40px auto 30px auto;
+    width: 500px;
 }
 
-/* CSS for the about page*/
+#about-footer > p {
+    font-size: 12px;
+    margin-top: 10px;
+}
 
-#about-picture {
-    width: 50%;
-    border: white dotted 2px;
+.social-icons {
+    width: 30px;
+}
+
+/*
+  ========================================
+  Plant pages style
+  ========================================
+*/
+
+.plant-page-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+
+}
+
+ .plant-page-section section {
+    width: 40%;
+    padding: 0px 30px;
+}
+
+.plant-page-section img {
+    width: 45%;
+    border: white solid 2px;
     padding: 5px;
+} 
+
+
+/*
+  ========================================
+  Blog page style
+  ========================================
+
+
+article {
+    border: solid white 2px; 
+    padding: 10px 0px;
+    width: 50%;
+    margin: 20px auto;
 }
 
-#about-paragraph {
-    margin-left: 100px;
-    margin-right: 100px;
+.blog-pic {
+    float: left;
+    margin: 5px;
 }
 
-
+h2 {
+    margin: 50px;
+    font-size: 30px;
+} */
+  
+  
+  
+ 
 
