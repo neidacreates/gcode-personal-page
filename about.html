@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <title>Nature at Home - About</title>
     <!--font info-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,29 +14,43 @@
 </head>
 
 <body id="main-background">
-    <h1 id="page-title">Nature at Home</h1>
+    <button id="dark-mode-btn" onclick="toggleDarkMode()">Switch to Light Mode</button>
+    <a class="other-links dark" href="index.html"><h1 id="page-title">Nature at Home</h1></a>
 
     <nav >
         <ul id="menu-bar">
             
             <li ><a class="menu-links dark" href="index.html">Home</a></li>
-            
-            <span>|</span>
-            
-            <li><a  class="menu-links dark"href="about.html">About</a></li> 
-            
-            <span>|</span>
 
-            <li><a  class="menu-links dark"href="index.html#plant-list-heading">Plant List</a></li>
+            <li><span>|</span></li>
 
+            <li>
+                <div class="dropdown">
+                <a  class="menu-links dark dropLink"href="plant-list.html">Plants</a>
+                <div class="dropdown-content">
+                  <a href="pothos.html">Pothos</a>
+                  <a href="snakeplant.html">Snake Plant</a>
+                  <a href="peacelily.html">Peace Lily</a>
+                </div>
+              </div> 
+            </li>
+
+            <li><span>|</span></li>
+            
+            <li><a  class="menu-links dark"href="about.html">About</a></li>      
         </ul>
     </nav>
 
-    <img id="about-picture" src="assests/seedling.jpg" alt="Picture of hand holding seedlings">
+    <img class="pictures" id="about-picture" src="assests/seedling.jpg" alt="Picture of hand holding seedlings">
 
-    <p id="about-paragraph">Hello! My name is Neida and I'm an amateur houseplant gardener. It was difficult to keep my plants alive when I started, and I lost a few to overwatering. After spending hours doing research to keep my plants alive, my collection has grown! I made this page because I want to share some tips to help you get started with your own indoor garden and avoid the pitfalls I encountered.</p>
+    <p id="about-paragraph">Hello! My name is <em>Neida</em> and I'm an amateur houseplant gardener. It was difficult to keep my plants alive when I started, and I lost a few to overwatering. After spending hours doing research to keep my plants alive, my collection has grown! I made this page because I want to share some tips to help you get started with your own indoor garden and avoid the pitfalls I encountered.</p>
 
-    <button id="dark-mode-btn" onclick="toggleDarkModeAbout()">Switch to Light Mode</button>
+    <footer id="about-footer">
+        <h4>Contact Me!</h4>
+        <p>Share your gardening tips or send me pictures of your plants, I love seeing them!</p>
+        <a href="https://twitter.com/neidacreates" target="_blank"><img class="social-icons" src="assests/twitter.png" alt="Twitter Logo"></a>
+        
+    </footer>
 
     <script src="main.js"></script>
 </body>
