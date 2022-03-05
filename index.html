@@ -2,7 +2,7 @@
 <html lang="en">
 <html>
     <head>
-        <title>Nature at Home</title>
+        <title> Nature at Home </title>
         <!--font info-->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,58 +12,57 @@
     </head>
 
     <body id="main-background">
-        <h1 id="page-title">Nature at Home</h1>
+        <button id="dark-mode-btn" onclick="toggleDarkMode()">Switch to Light Mode</button>
+
+        <a class="other-links dark" href="#pageTitle"><h1 id="page-title">Nature at Home</h1></a>
 
         <nav >
             <ul id="menu-bar">
                 
-                <li ><a class="menu-links dark" href="#pageTitle">Home</a></li>
-                
-                <span>|</span>
-                
-                <li><a  class="menu-links dark"href="about.html">About</a></li> 
-                
-                <span>|</span>
+                <li><a class="menu-links dark" href="#pageTitle">Home</a></li>
 
-                <li><a  class="menu-links dark"href="plant-list-heading">Plant List</a></li>
+                <li>|</li>
 
+                <li>
+                    <div class="dropdown">
+                    <a class="menu-links dark dropLink" href="plant-list.html">Plants</a>
+                    <div class="dropdown-content">
+                      <a href="pothos.html">Pothos</a>
+                      <a href="snakeplant.html">Snake Plant</a>
+                      <a href="peacelily.html">Peace Lily</a>
+                    </div>
+                  </div> 
+                </li>
+
+                <li>|</li>
+                
+                <li><a  class="menu-links dark"href="about.html">About</a></li>      
             </ul>
         </nav>
 
         <section id="main-pic-and-paragraph">
-
-            <img src="assests/plants.jpg" alt="Image of houseplants" id="homepage-pic">
-
-            <!-- <p class="caption">You can grow a collection like this too!</p> -->
-            
-            <p id="main-paragraph"> Welcome! If you want to learn more about how to raise your own houseplant friends, you've come to the right place! Plants are not only a pretty addition to your home, but also a healthy addition too. Plants are really pretty to have in your home, but they are also good to keep you healthy. Some plants even clean the air you breathe! Having a little bit of nature in your house helps to make your space more alive and that helps you feel happier. That's why it's great to have plants, but it can be hard to take care of them so that they don't die. Make sure to find out what your plants like (Lots of sun or no sun? Lots of water or no water?) and treat them well so they will love you back.</p>
-            
+            <img src="assests/plants.jpg" alt="Image of houseplants" id="homepage-pic" class="pictures">
+            <div id="main-paragraph">
+                <p><em>Welcome!</em> If you want to learn more about how to raise your own houseplant friends, you've come to the right place!</p> 
+                <p>Plants are not only a beautiful addition to your home, but also an added benefit for your health.</p>
+                <p>Having a little bit of nature in your house helps to make your space more alive and that helps you feel happier. Some plants even clean the air you breathe!</p>
+                <p>That's why it's great to have plants, but it can be hard to take care of them so that they don't die. Make sure to find out what your plants like (Lots of sun or no sun? Lots of water or no water?) and treat them well so they will love you back.</p>
+            </div>
         </section>
 
    
             
-        <h2 id="plant-list-heading">Easy Plants to Start Growing:</h2>
+        <h2 id="plant-list-heading">Ready to Start Your Own Garden? Start with These Forgiving Plants:</h2>
             
-        <div id="list-pics-container">    
-            <img class="list-pics" src="assests/peaceLily.jpg">
-            
-            <img class="list-pics" src="assests/snakePlant.jpg">
-           
-            <img class="list-pics" src="assests/pothos.jpg">
+        <ul id="list-pics-container">
+            <li><a class="other-links dark" href="peacelily.html"><img class="list-pics pictures" src="assests/peaceLily.jpg"> <span>Peace Lily</span></a></li>
 
-            <img class="list-pics" src="assests/moreplants.jpg">
-        </div>
+            <li><a class="other-links dark" href="snakeplant.html"><img class="list-pics pictures" src="assests/snakePlant.jpg"> <span>Snake Plant</span></a></li>
 
-        <ul id="plant-list">
-            <li>Peace Lily</li>
-            <li>Snake Plant</li>
-            <li>Pothos</li>
-            <li><a class="outside-web-links"href="https://www.hgtv.com/outdoors/flowers-and-plants/houseplants/14-indoor-plants-for-low-light-pictures" target="_blank">And Many More!</a></li>
+            <li><a class="other-links dark" href="pothos.html"><img class="list-pics pictures" src="assests/pothos.jpg"> <span>Pothos</span></a></li>
+
+            <li><a class="other-links dark" href="https://www.hgtv.com/outdoors/flowers-and-plants/houseplants/14-indoor-plants-for-low-light-pictures" target="_blank"><img class="list-pics pictures" src="assests/morePlants.jpg"> <span>And Many More!</span></a></li>
         </ul>
-
-        <button id="dark-mode-btn" onclick="toggleDarkMode()">Switch to Light Mode</button>
-        
         <script src="main.js"></script>
     </body>
-
 </html>
