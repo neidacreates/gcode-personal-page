@@ -161,7 +161,7 @@ em {
 
 }
 
-@media (min-width: 1px) and (max-width: 900px){
+@media (min-width: 0px) and (max-width: 900px){
     #main-pic-and-paragraph {
         display: flex;
         flex-direction: column;
@@ -173,7 +173,7 @@ em {
         width: auto;
         border: white solid 2px;
         padding: 5px;
-        height: auto;
+        max-height: 500px;
     }
 
     #plant-list-heading {
@@ -286,7 +286,7 @@ em {
     } 
 }
 
-@media (min-width: 1px) and (max-width: 900px) {
+@media (min-width: 0px) and (max-width: 900px) {
     .plant-page-section {
         display: flex;
         flex-direction: column;
@@ -303,7 +303,7 @@ em {
         width: auto;
         border: white solid 2px;
         padding: 5px;
-        height: auto;
+        max-height: 500px;
         /* height: auto; */
     } 
 }
