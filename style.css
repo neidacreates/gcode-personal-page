@@ -1,7 +1,7 @@
 
-* {
+/* * {
     box-sizing: border-box;
-  }
+  } */
 /*
   ========================================
   Base style
@@ -40,12 +40,12 @@ em {
     color:rgb(179,212,129);
 }
 
-
 /*
   ========================================
   Menu bar and links
   ========================================
 */
+
 
 #menu-bar {
     background: white;
@@ -119,45 +119,92 @@ em {
   ========================================
 */
 
-#main-pic-and-paragraph {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-} 
+@media (min-width: 901px) {
+    #main-pic-and-paragraph {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    } 
+    #homepage-pic {
+        width:45%;
+        border: white solid 2px;
+        padding: 5px;
+    }
 
-#homepage-pic {
-    width:45%;
-    border: white solid 2px;
-    padding: 5px;
+    #plant-list-heading {
+        margin-top: 100px;
+        margin-bottom: 30px;
+    }
+
+    #list-pics-container {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        margin-top: 50px;
+    }
+
+    #main-paragraph {
+        color: white;
+        background-color: rgb(49,84,21);
+        padding: 30px;
+        width: 40%;
+        border: solid white 2px;
+    }
+
+    .list-pics {
+        border-radius: 50%;
+        width: 90%;
+        margin-bottom: 20px; 
+        border: solid white 2px;
+        padding: 5px;
+    }
+
 }
 
-#main-paragraph {
-    color: white;
-    background-color: rgb(49,84,21);
-    padding: 30px;
-    width: 40%;
-    border: solid white 2px;
-}
+@media (min-width: 0px) and (max-width: 900px){
+    #main-pic-and-paragraph {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
 
-#plant-list-heading {
-    margin-top: 100px;
-    margin-bottom: 30px;
-    /* color: white; */
-}
+    #homepage-pic {
+        width: auto;
+        border: white solid 2px;
+        padding: 5px;
+    }
 
-#list-pics-container {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 30px;
-    margin-top: 50px;
-}
+    #plant-list-heading {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
 
-.list-pics {
-    border-radius: 50%;
-    width: 90%;
-    margin-bottom: 20px; 
-    border: solid white 2px;
-    padding: 5px;
+    #list-pics-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        padding-left: 0px;
+    }
+
+    #main-paragraph {
+        color: white;
+        background-color: rgb(49,84,21);
+        padding: 30px;
+        width: auto;
+        border: solid white 2px;
+    }
+
+    .list-pics {
+        border-radius: 50%;
+        width: 90%;
+        /* margin-bottom: 20px;  */
+        border: solid white 2px;
+        padding: 5px;
+    }
+
 }
 
 /*
@@ -165,51 +212,101 @@ em {
   About page style
   ========================================
 */
+@media (min-width: 901px) {
+    #about-picture {
+        width: 40%;
+        border: white solid 2px;
+        padding: 5px;
+        margin-top: 30px;
+    }
 
-#about-picture {
-    width: 40%;
-    border: white solid 2px;
-    padding: 5px;
-    margin-top: 30px;
+    #about-paragraph, #about-footer {
+        margin: 40px auto 30px auto;
+        width: 500px;
+    }
+
+    #about-footer > p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+    
+    .social-icons {
+        width: 30px;
+    }
+    
 }
 
-#about-paragraph, #about-footer {
-    margin: 40px auto 30px auto;
-    width: 500px;
-}
+@media (min-width: 0px) and (max-width: 900px){
 
-#about-footer > p {
-    font-size: 12px;
-    margin-top: 10px;
-}
+    #about-picture {
+        width: 90%;
+        border: white solid 2px;
+        padding: 5px;
+        margin-top: 30px;
+    }
 
-.social-icons {
-    width: 30px;
-}
+    #about-paragraph, #about-footer {
+        margin: auto;
+        width: auto;
+    }
 
+    #about-footer > p {
+        font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .social-icons {
+        width: 30px;
+    }
+
+}
 /*
   ========================================
   Plant pages style
   ========================================
 */
-
-.plant-page-section {
-    display: flex;
-    justify-content: space-around;
-    margin: 30px auto;
-
+@media (min-width: 901px) {
+    .plant-page-section {
+        display: flex;
+        justify-content: space-around;
+        margin: 30px auto;
+    }
+    
+     .plant-page-section section {
+        width: 40%;
+        padding: 0px 30px;
+    }
+    
+    .plant-page-section img {
+        width: 50vw;
+        border: white solid 2px;
+        padding: 5px;
+        height: auto;
+    } 
 }
 
- .plant-page-section section {
-    width: 40%;
-    padding: 0px 30px;
+@media (min-width: 0px) and (max-width: 900px) {
+    .plant-page-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 30px auto;
+    }
+    
+     .plant-page-section section {
+        width: auto;
+        /* padding: 0px 30px; */
+    }
+    
+    .plant-page-section img {
+        width: auto;
+        border: white solid 2px;
+        padding: 5px;
+        /* height: auto; */
+    } 
 }
 
-.plant-page-section img {
-    width: 45%;
-    border: white solid 2px;
-    padding: 5px;
-} 
+
 
 
 /*
