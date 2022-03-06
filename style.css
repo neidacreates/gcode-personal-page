@@ -161,7 +161,7 @@ em {
 
 }
 
-@media (min-width: 0px) and (max-width: 900px){
+@media (min-width: 1px) and (max-width: 900px){
     #main-pic-and-paragraph {
         display: flex;
         flex-direction: column;
@@ -170,7 +170,7 @@ em {
     }
 
     #homepage-pic {
-        width: 80%;
+        width: auto;
         border: white solid 2px;
         padding: 5px;
     }
@@ -193,7 +193,7 @@ em {
         color: white;
         background-color: rgb(49,84,21);
         padding: 30px;
-        width: 80%;
+        width: auto;
         border: solid white 2px;
     }
 
