@@ -170,7 +170,7 @@ em {
     }
 
     #homepage-pic {
-        width: auto;
+        width: 80%;
         border: white solid 2px;
         padding: 5px;
     }
@@ -193,7 +193,7 @@ em {
         color: white;
         background-color: rgb(49,84,21);
         padding: 30px;
-        width: auto;
+        width: 80%;
         border: solid white 2px;
     }
 
