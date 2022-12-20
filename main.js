@@ -1,16 +1,13 @@
-console.log('JS file is connected');
+let bodyElement = document.getElementById("main-background"); 
+let darkModeButtonElement = document.getElementById("dark-mode-btn");
+let menuBar = document.getElementById("menu-bar");
+let menuLinks = document.getElementsByClassName("menu-links"); //returns an array
+let otherLinks = document.getElementsByClassName("other-links"); //returns an array
+let allPictures = document.getElementsByClassName("pictures"); //returns an array
 
-function toggleDarkMode(){
-    var bodyElement = document.getElementById("main-background"); 
-    var darkModeButtonElement = document.getElementById("dark-mode-btn");
-    var menuBar = document.getElementById("menu-bar");
-    var menuLinks = document.getElementsByClassName("menu-links"); //returns an array
-    var otherLinks = document.getElementsByClassName("other-links"); //returns an array
-    var allPictures = document.getElementsByClassName("pictures"); //returns an array
-    
+const toggleDarkMode = () => {
 //going from white background to green background, green text to white text
     if (bodyElement.style.backgroundColor === "white"){
-        console.log('we go into the if statement block and switch to dark mode');
         //changing background color
         bodyElement.style.backgroundColor = "rgb(30,53,10)";
         //changing body text color
@@ -39,7 +36,6 @@ function toggleDarkMode(){
     } 
 //going from green background to white background, white text to green text
     else {
-        console.log('we go into the else statement block and switch to light mode');
         //changing background color 
         bodyElement.style.backgroundColor = "white"; 
         //changing body text color
@@ -65,7 +61,6 @@ function toggleDarkMode(){
         //changing button color
         darkModeButtonElement.style.backgroundColor = "rgb(30,53,10)";
         darkModeButtonElement.style.color = "white";
-
     } 
 };
 
